@@ -1,0 +1,14 @@
+.logo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-top: 250px;
+
+    a input {
+        width: 150px;
+        &:hover{
+            transform: scale(1.5);
+        }
+}
+}

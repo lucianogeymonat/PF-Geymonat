@@ -1,0 +1,15 @@
+.header-warning{
+    @include warning;
+}
+.text-animation{
+    animation: desplazamiento 10s linear infinite;
+    }
+
+@keyframes desplazamiento {
+0% {
+    transform: translateX(100%);
+    }
+100% {
+    transform: translateX(-100%);
+    }
+}

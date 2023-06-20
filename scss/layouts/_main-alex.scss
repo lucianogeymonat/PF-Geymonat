@@ -1,0 +1,55 @@
+.alex {
+    width: 600px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 280px;
+}
+.circle{
+    position: absolute;
+    width: 300px;
+    margin-left: 480px;
+    margin-top: 300px;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.poem {
+    @include alex-text;
+    left: 60px;
+    margin-top: 500px;
+}
+.slider {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    overflow:scroll;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+
+}
+.slider ul li {
+    list-style: none;
+}
+.slider ul li img {
+    width: 400px;
+    height: auto;
+}
+
+.description{
+    @include alex-text;
+    width: 500px;
+    right: 60px;
+    margin-top: 400px;
+}

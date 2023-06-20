@@ -1,0 +1,53 @@
+body header nav {
+    display: flex;
+    justify-content:  space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 22px;
+        li{
+            position:relative;
+            font-weight: 300;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                height: 1px;
+                width: 0;
+                background: white;
+                transition: width 0.5s ease-out ;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+.black-navbar{
+    color: black;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        height: 1px;
+        width: 0;
+        background: black;
+        transition: width 0.5s ease-out ;
+    }
+    &:hover::before{
+        width: 100%;
+}
+}
+
+.vertical-navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
