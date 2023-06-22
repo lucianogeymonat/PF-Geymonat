@@ -1,0 +1,25 @@
+
+@media (max-width: 320px){
+    body header nav ul li {
+        font-size: 18px;
+    }
+    .poem{
+        display: none;
+    }
+    .alex{
+        margin-left: 20%; 
+        margin-top: 250%;
+    }
+    .circle{
+        margin-left: 40%;
+        margin-top: 250%;
+    }
+    .description p {
+        margin-left: 20%;
+    }
+    .shop{
+        grid-template-columns: 100%;
+        margin: 0;
+
+    }
+    }
